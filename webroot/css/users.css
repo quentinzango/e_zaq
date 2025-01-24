@@ -1,0 +1,124 @@
+/* Style général pour le conteneur */
+.users.index.content {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton d'ajout d'utilisateur */
+.users.index .button.float-right {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.users.index .button.float-right:hover {
+    background-color: #218838;
+}
+
+/* Titre */
+.users.index h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Table */
+.users.index .table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.users.index .table-responsive th,
+.users.index .table-responsive td {
+    text-align: left;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+.users.index .table-responsive th {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+
+.users.index .table-responsive td {
+    color: #555;
+}
+
+/* Actions */
+.users.index .actions {
+    text-align: center;
+}
+
+.users.index .actions a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.users.index .actions a:hover {
+    color: #0056b3;
+}
+
+.users.index .actions .postLink {
+    color: #dc3545;
+}
+
+.users.index .actions .postLink:hover {
+    color: #c82333;
+}
+
+/* Pagination */
+.users.index .paginator {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.users.index .paginator ul.pagination {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.users.index .paginator ul.pagination li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.users.index .paginator ul.pagination li a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.users.index .paginator ul.pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Compteur */
+.users.index .paginator p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}

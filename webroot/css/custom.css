@@ -1,0 +1,286 @@
+.nav-link img {
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.navbar {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px; /* Optionnel: Ajoute des coins arrondis */
+    border: 1px solid #ddd; /* Optionnel: Bordure légère */
+}
+
+.tm-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.tm-search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%; /* Occupe toute la largeur de la section */
+    text-align: center;
+}
+
+.tm-search-input {
+    width: 300px; /* Largeur du champ de recherche */
+    margin-right: 10px; /* Espace entre le champ de recherche et le bouton */
+}
+
+.tm-search-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Container de formulaire */
+.login-form-container {
+    background-color: #f8f9fa; /* Couleur de fond claire */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet flottant */
+    max-width: 400px;
+    margin: 50px auto; /* Centrer le formulaire horizontalement et ajouter un peu de marge en haut */
+    box-sizing: border-box;
+}
+
+/* Légende du formulaire */
+.login-form-container legend {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style des champs de formulaire */
+.login-form-container .form-control {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Focus sur les champs */
+.login-form-container .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Style du bouton de connexion */
+.login-form-container .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    width: 100%; /* Le bouton prend toute la largeur */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol sur le bouton */
+.login-form-container .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Container pour les liens */
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Alignement à gauche pour "Add a user" */
+.left-link {
+    text-align: left;
+}
+
+/* Alignement à droite pour "Forgot password" */
+.right-link {
+    text-align: right;
+}
+
+
+/* Effet de survol sur le lien */
+.login-form-container .btn-link:hover {
+    color: #0056b3;
+}  
+
+/* Positionner l'icône de l'œil à droite du champ de mot de passe */
+.password-container {
+    position: relative;
+}
+
+/* Style de l'icône d'œil */
+#togglePassword {
+    position: absolute;
+    right: 15px;
+    top: 50%; /* Centrer verticalement */
+    transform: translateY(-20%); /* Ajuster pour que l'icône soit parfaitement centrée */
+    background: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Effet au survol de l'icône */
+#togglePassword:hover {
+    color: #0056b3;
+}
+
+/* Container du formulaire de contact */
+.contact-form-container {
+    background-color: #f7f8fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animation de fade-in pour l'apparition du formulaire */
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Titre du formulaire */
+.contact-form-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Description du formulaire */
+.contact-form-container p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Style du formulaire */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Groupes de champs */
+.form-group {
+    position: relative;
+}
+
+/* Styles des labels */
+.form-group label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Champs de saisie */
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* Effet focus sur les champs */
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(38, 143, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Bouton d'envoi */
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    font-weight: 600;
+}
+
+/* Effet au survol du bouton */
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Effet de focus sur le bouton */
+.submit-btn:focus {
+    outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 30px;
+        margin: 20px auto;
+    }
+
+    .submit-btn {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 30px;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+}
+
+
+
